@@ -1,0 +1,39 @@
+import java.util.*;
+     class map1
+     {
+       public static void main (String[]args)
+       {
+	 Scanner sc = new Scanner (System.in);
+	   HashMap < Integer, Integer > h1 =
+	   new HashMap < Integer, Integer > ();
+	 int n = sc.nextInt ();
+	 int key = sc.nextInt ();
+	 int b = 0, t = 0;
+	 int[] a = new int[n];
+	   System.out.println ("ENTER N VALUES:");
+	 for (int i = 0; i < n; i++)
+	     a[i] = sc.nextInt ();
+	 for (int i = 0; i < a.length; i++)
+	     key = a[i];
+	 if (key % 3 == 0)
+	   {
+	     h1.put (3, t + 1);
+	     t = t + 1;
+	   }
+	 else if (key % 5 == 0)
+	   {
+	     h1.put (5, b + 1);
+	     b = b + 1;
+	   }
+       for (Integer i:h1.keySet ())
+	   System.out.println (i + "=" + h1.get (i) + " ");
+       }
+     }
+     ------------------------------------------------------------------------------------------------------------------------------------------------------------
+    C:\Users \ hp > javac map1.java
+    C:\Users \ hp > java map1
+       10
+    ENTER N VALUES:12 5 10 20 9 3 6 7 8 11
+    3 = 3
+    5 = 3
+      
